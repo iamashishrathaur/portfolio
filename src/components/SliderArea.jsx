@@ -1,10 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import reactLogo from '../assets/images/react.png'
 import ViteLogo from '../assets/images/vite.png'
 import nodeLogo from '../assets/images/node.png'
+import { ReactTyped } from 'react-typed'
 
 const SliderArea = () => {
+
+
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const texts = ["Developer.", "Professional Coder.", "Developer."];
+  const widths = [257.325, 413.887, 257.325]; // Widths corresponding to each text
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      // Move to the next text after a certain delay
+      setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+    }, 2000); // Change text every 2 seconds
+    return () => clearTimeout(timeout);
+  }, [texts.length]);
+
   return (
     <div id="home" className="rn-slider-area">
     <div className="slide slider-style-1">
@@ -20,21 +35,24 @@ const SliderArea = () => {
                     <span className="cd-headline clip is-full-width">
                       <span>a </span>
                       {/* ROTATING TEXT */}
-                      <span className="cd-words-wrapper" style={{width: '257.325px'}}>
-                        <b className="is-hidden">Developer.</b>
-                        <b className="is-visible">Professional Coder.</b>
-                        <b className="is-hidden">Developer.</b>                               
-                        {/* <ReactTyped
+                      <span className="cd-words-wrapper" >
+                        {/* strings={[
+                          'Developer.',
+                          'Professional Coder.',
+                          'Full Stack Developer.'
+                        ]} */}
+                        <ReactTyped className='react-word-typed'
                             strings={[
-                              "Search for products",
-                              "Search for categories",
-                              "Search for brands",
-                            ]}
-                            typeSpeed={140}
-                            backSpeed={100}
+                              'Developer.',
+                              'Professional Coder.',
+                              'Full Stack Developer.'
+                            ]} 
+                            typeSpeed={50}
+                            backSpeed={50}
                             loop
-                          >
-                          </ReactTyped> */}
+                            showCursor={false}
+                            contentType="html" // Set content type to HTML
+                          />
                       </span>
                     </span>
                     {/* type headline end */}
