@@ -1,11 +1,9 @@
-import React from 'react'
 import portfolio1 from  '../assets/images/portfolio-01.jpg'
 import portfolio2 from  '../assets/images/portfolio-02.jpg'
 import portfolio3 from  '../assets/images/portfolio-03.jpg'
 import portfolio4 from  '../assets/images/portfolio-04.jpg'
 import portfolio5 from  '../assets/images/portfolio-05.jpg'
 import portfolio6 from  '../assets/images/portfolio-06.jpg'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const PortfolioArea = () => {
   return (
@@ -25,8 +23,8 @@ const PortfolioArea = () => {
                   <div className="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
                     <div className="inner">
                       <div className="thumbnail">
-                        <a href="javascript:void(0)">
-                          <LazyLoadImage src={portfolio1} alt="Personal Portfolio Images" />
+                        <a href='javascript:void(0)'>
+                          <img src={portfolio1} alt="Personal Portfolio Images" />
                         </a>
                       </div>
                       <div className="content">
@@ -51,7 +49,7 @@ const PortfolioArea = () => {
                     <div className="inner">
                       <div className="thumbnail">
                         <a href="javascript:void(0)">
-                          <LazyLoadImage src={portfolio2} alt="Personal Portfolio Images" />
+                          <img src={portfolio2} alt="Personal Portfolio Images" />
                         </a>
                       </div>
                       <div className="content">
@@ -77,7 +75,7 @@ const PortfolioArea = () => {
                     <div className="inner">
                       <div className="thumbnail">
                         <a href="javascript:void(0)">
-                          <LazyLoadImage src={portfolio3} alt="Personal Portfolio Images" />
+                          <img src={portfolio3} alt="Personal Portfolio Images" />
                         </a>
                       </div>
                       <div className="content">
@@ -103,7 +101,7 @@ const PortfolioArea = () => {
                     <div className="inner">
                       <div className="thumbnail">
                         <a href="javascript:void(0)">
-                          <LazyLoadImage src={portfolio4} alt="Personal Portfolio Images" />
+                          <img src={portfolio4} alt="Personal Portfolio Images" />
                         </a>
                       </div>
                       <div className="content">
@@ -129,7 +127,7 @@ const PortfolioArea = () => {
                     <div className="inner">
                       <div className="thumbnail">
                         <a href="javascript:void(0)">
-                          <LazyLoadImage src={portfolio5} alt="Personal Portfolio Images" />
+                          <img src={portfolio5} alt="Personal Portfolio Images" />
                         </a>
                       </div>
                       <div className="content">
@@ -154,7 +152,7 @@ const PortfolioArea = () => {
                     <div className="inner">
                       <div className="thumbnail">
                         <a href="javascript:void(0)">
-                          <LazyLoadImage src={portfolio6} alt="Personal Portfolio Images" />
+                          <img src={portfolio6} alt="Personal Portfolio Images" />
                         </a>
                       </div>
                       <div className="content">
