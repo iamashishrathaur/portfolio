@@ -33,7 +33,7 @@ const Header = () => {
           <nav id="sideNav" className="mainmenu-nav navbar-example2 d-none d-xl-block onepagenav">
             {/* Start Mainmanu Nav */}
             <ul className="primary-menu nav nav-pills">
-              <li className="nav-item current"><a className="nav-link" href="#home">Home</a></li>
+              <li className="nav-item"><a className="nav-link" href="#home">Home</a></li>
               <li className="nav-item"><a className="nav-link" href="#features">Features</a></li>
               <li className="nav-item"><a className="nav-link" href="#portfolio">Portfolio</a></li>
               <li className="nav-item"><a className="nav-link" href="#resume">Resume</a></li>
