@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import {  useState } from 'react';
 import { Menu } from 'react-feather';
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)
