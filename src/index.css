@@ -229,7 +229,7 @@ h6,
 }
 a{
   text-decoration: none !important;
-  font-size: 14px !important;
+  outline: none !important;
 }
 
 h1 a,
@@ -15315,23 +15315,23 @@ div#featured-project-carousel {
   .tab-navigation-button {
     width: 100%;
     float: none;
-    display: inline-block;
+    display: inline-block !important;
     padding: 0;
-    margin-bottom: 50px;
+    margin-bottom: 50px !important;
   }
 }
 @media only screen and (max-width: 767px) {
   .tab-navigation-button {
     width: 100%;
     float: none;
-    display: inline-block;
+    display: inline-block !important;
     padding: 0;
-    margin-bottom: 50px;
+    margin-bottom: 50px !important;
   }
 }
 @media only screen and (max-width: 575px) {
   .tab-navigation-button {
-    margin-bottom: 35px;
+    margin-bottom: 35px !important;
   }
 }
 .tab-navigation-button .nav-item {
@@ -15497,6 +15497,7 @@ div#featured-project-carousel {
 .client-card .main-content .client-name a {
   transition: var(--transition);
   color: #7c838e;
+  font-size: var(--font-size-b1);
 }
 .client-card .main-content .client-name a:hover {
   color: var(--color-primary);
@@ -16327,10 +16328,15 @@ span.sr-only {
 }
 .contact-about-area .description span {
   display: block;
+  color: var(--color-body);
+  font-family: var(--font-primary);
+  font-weight: var(--p-regular);
+  line-height: var(--line-height-b1);
+  font-size: 18px !important;
 }
 @media only screen and (max-width: 767px) {
   .contact-about-area .description span {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
 .contact-about-area .description span a {

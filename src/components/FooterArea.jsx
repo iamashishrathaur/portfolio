@@ -12,7 +12,7 @@ const FooterArea = () => {
                 <img src="assets/images/logo/logo-vertical.png" alt="logo" />
               </a>
             </div>
-            <p className="description mt--30">© 2024. All rights reserved by <a target="_blank" href="#">Ashish Rathaur.</a></p>
+            <p className="description mt--30">© 2024. All rights reserved by <a target="_blank" href="#">Ashish.</a></p>
           </div>
         </div>
       </div>

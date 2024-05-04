@@ -5,6 +5,8 @@ import portfolio4 from  '../assets/images/portfolio-04.jpg'
 import portfolio5 from  '../assets/images/portfolio-05.jpg'
 import portfolio6 from  '../assets/images/portfolio-06.jpg'
 
+import {Heart} from 'react-feather'
+
 const PortfolioArea = () => {
   return (
     <div className="rn-portfolio-area rn-section-gap section-separator" id="portfolio">
@@ -33,7 +35,7 @@ const PortfolioArea = () => {
                             <a href="javascript:void(0)">Development</a>
                           </div>
                           <div className="meta">
-                            <span><a href="javascript:void(0)"><i className="feather-heart" /></a>
+                            <span><a href="javascript:void(0)"><Heart className="feather-heart" style={{marginRight:'2px',marginBottom:'2px', height:'13px', fontSize:'13px' , transition:'0.4s', color:'white'}}/></a>
                               600</span>
                           </div>
                         </div>
@@ -58,7 +60,7 @@ const PortfolioArea = () => {
                             <a href="javascript:void(0)">Application</a>
                           </div>
                           <div className="meta">
-                            <span><a href="javascript:void(0)"><i className="feather-heart" /></a>
+                            <span><a href="javascript:void(0)"><Heart className="feather-heart" style={{marginRight:'2px',marginBottom:'2px', height:'13px', fontSize:'13px' , transition:'0.4s', color:'white'}}/></a>
                               750</span>
                           </div>
                         </div>
@@ -84,7 +86,7 @@ const PortfolioArea = () => {
                             <a href="javascript:void(0)">Photoshop</a>
                           </div>
                           <div className="meta">
-                            <span><a href="javascript:void(0)"><i className="feather-heart" /></a>
+                            <span><a href="javascript:void(0)"><Heart className="feather-heart" style={{marginRight:'2px',marginBottom:'2px', height:'13px', fontSize:'13px' , transition:'0.4s', color:'white'}}/></a>
                               630</span>
                           </div>
                         </div>
@@ -110,7 +112,7 @@ const PortfolioArea = () => {
                             <a href="javascript:void(0)">Figma</a>
                           </div>
                           <div className="meta">
-                            <span><a href="javascript:void(0)"><i className="feather-heart" /></a>
+                            <span><a href="javascript:void(0)"><Heart className="feather-heart" style={{marginRight:'2px',marginBottom:'2px', height:'13px', fontSize:'13px' , transition:'0.4s', color:'white'}}/></a>
                               360</span>
                           </div>
                         </div>
@@ -136,7 +138,7 @@ const PortfolioArea = () => {
                             <a href="javascript:void(0)">Web Design</a>
                           </div>
                           <div className="meta">
-                            <span><a href="javascript:void(0)"><i className="feather-heart" /></a>
+                            <span><a href="javascript:void(0)"><Heart className="feather-heart" style={{marginRight:'2px',marginBottom:'2px', height:'13px', fontSize:'13px' , transition:'0.4s', color:'white'}}/></a>
                               280</span>
                           </div>
                         </div>
@@ -161,7 +163,7 @@ const PortfolioArea = () => {
                             <a href="javascript:void(0)">Web Design</a>
                           </div>
                           <div className="meta">
-                            <span><a href="javascript:void(0)"><i className="feather-heart" /></a>
+                            <span><a href="javascript:void(0)"><Heart className="feather-heart" style={{marginRight:'2px',marginBottom:'2px', height:'13px', fontSize:'13px' , transition:'0.4s', color:'white', }}/></a>
                               690</span>
                           </div>
                         </div>

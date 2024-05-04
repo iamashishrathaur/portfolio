@@ -5,3 +5,24 @@
 .cd-words-wrapper{
     margin-left: 10px;
 }
+.rn-nav-list.nav-tabs{
+    --bs-nav-tabs-border-color: transparent;
+}
+.feather-heart:hover {
+    color: red !important; 
+  }
+  
+
+
+  /* @media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (max-width: 767px) {
+    .tab-navigation-button {
+    margin-bottom: 50px !important;
+    }
+ }
+  
+  @media only screen and (max-width: 575px) {
+    .tab-navigation-button {
+      margin-bottom: 35px !important;
+    }
+  } */

@@ -45,7 +45,7 @@ function App() {
       <ResumeArea/>
       {/* End Resume Area */}
       {/* Start Testimonia Area  */}
-      <TestimonialArea/>
+      {/* <TestimonialArea/> */}
       {/* End Testimonia Area  */}
       {/* Start Client Area */}
       <ClientArea/>

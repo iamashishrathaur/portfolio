@@ -34,7 +34,7 @@ const Header = () => {
           {/* Start Header Right  */}
           <div className="header-right">
             <div className="hamberger-menu d-block d-xl-none">
-              <Menu id="menuBtn" className="feather-menu humberger-menu" style={{ color: '#ff014f' }} /> 
+              <Menu id="menuBtn" className="feather-menu humberger-menu" style={{ color: '#ff014f', height:'36px', width:'36px', zIndex:'800' , position:'relative',fontSize:'36px',transition:'0.5s',top:'2px'}} /> 
             </div>
             <div className="close-menu d-block">
               <span className="closeTrigger">

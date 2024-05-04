@@ -1,4 +1,8 @@
 import React from 'react'
+import blog1 from '../assets/images/blog-01.jpg'
+import blog2 from '../assets/images/blog-02.jpg'
+import blog3 from '../assets/images/blog-03.jpg'
+import {Clock} from 'react-feather'
 
 const NewsArea = () => {
   return (
@@ -19,7 +23,7 @@ const NewsArea = () => {
                     <div className="inner">
                       <div className="thumbnail">
                         <a href="javascript:void(0)">
-                          <img src="assets/images/blog/blog-01.jpg" alt="Personal Portfolio Images" />
+                          <img src={blog1} alt="Personal Portfolio Images" />
                         </a>
                       </div>
                       <div className="content">
@@ -28,7 +32,7 @@ const NewsArea = () => {
                             <a href="javascript:void(0)">Canada</a>
                           </div>
                           <div className="meta">
-                            <span><i className="feather-clock" /> 2 min read</span>
+                            <span><Clock className="feather-clock"  style={{width:'13px', height:'13px',marginRight:'2px', marginBottom:'2px'}}/> 2 min read</span>
                           </div>
                         </div>
                         <h4 className="title"><a href="javascript:void(0)">T-shirt design is the part of design
@@ -44,7 +48,7 @@ const NewsArea = () => {
                     <div className="inner">
                       <div className="thumbnail">
                         <a href="javascript:void(0)">
-                          <img src="assets/images/blog/blog-02.jpg" alt="Personal Portfolio Images" />
+                          <img src={blog2} alt="Personal Portfolio Images" />
                         </a>
                       </div>
                       <div className="content">
@@ -53,7 +57,7 @@ const NewsArea = () => {
                             <a href="javascript:void(0)">Development</a>
                           </div>
                           <div className="meta">
-                            <span><i className="feather-clock" /> 2 hour read</span>
+                            <span><Clock className="feather-clock" style={{width:'13px', height:'13px',marginRight:'2px', marginBottom:'2px'}}/> 2 hour read</span>
                           </div>
                         </div>
                         <h4 className="title"><a href="javascript:void(0)">The services provide for design <i className="feather-arrow-up-right" /></a></h4>
@@ -68,7 +72,7 @@ const NewsArea = () => {
                     <div className="inner">
                       <div className="thumbnail">
                         <a href="javascript:void(0)">
-                          <img src="assets/images/blog/blog-03.jpg" alt="Personal Portfolio Images" />
+                          <img src={blog3} alt="Personal Portfolio Images" />
                         </a>
                       </div>
                       <div className="content">
@@ -77,7 +81,7 @@ const NewsArea = () => {
                             <a href="javascript:void(0)">Application</a>
                           </div>
                           <div className="meta">
-                            <span><i className="feather-clock" /> 5 min read</span>
+                            <span><Clock className="feather-clock" style={{width:'13px', height:'13px',marginRight:'2px', marginBottom:'2px'}}/> 5 min read</span>
                           </div>
                         </div>
                         <h4 className="title"><a href="javascript:void(0)">Mobile app landing design &amp; app

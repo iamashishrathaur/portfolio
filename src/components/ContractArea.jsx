@@ -1,5 +1,7 @@
 import React from 'react'
 
+import ContractImg from '../assets/images/contact1.png'
+
 const ContractArea = () => {
   return (
     <div className="rn-contact-area rn-section-gap section-separator" id="contacts">
@@ -16,11 +18,11 @@ const ContractArea = () => {
         <div className="col-lg-5">
           <div className="contact-about-area">
             <div className="thumbnail">
-              <img src="assets/images/contact/contact1.png" alt="contact-img" />
+              <img src={ContractImg} alt="contact-img" />
             </div>
             <div className="title-area">
-              <h4 className="title">Nevine Acotanza</h4>
-              <span>Chief Operating Officer</span>
+              <h4 className="title">Ashish Rathaur</h4>
+              <span style={{fontSize:'18px',color:'#878e99'}}>Chief Operating Officer</span>
             </div>
             <div className="description">
               <p>I am available for freelance work. Connect with me via and call in to my account.
