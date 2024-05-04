@@ -113,13 +113,27 @@ const Header = () => {
      </div>
    </div>
    </div> */}
-   <div className={`sidebar ${menuOpen ? '':'isHidden'}`} onClick={handelCloseMenu}>
-		<ul className="sidebar-menu">
-			<li className="sidebar-menu__item"><a href="#"><i className="fa fa-home" aria-hidden="true"></i> Home</a></li>
-			<li className="sidebar-menu__item"><a href="#"><i className="fa fa-rss" aria-hidden="true"></i> News</a></li>
+   <div className={`popup-mobile-menu ${menuOpen ? '':'isHidden'}`} onClick={handelCloseMenu}>
+    <div className='inner'>
+       <ul className="primary-menu nav onepagenav">
+         <li className="nav-item"><a className="nav-link smoth-animation active" href="#home">Home</a></li>
+         <li className="nav-item"><a className="nav-link smoth-animation" href="#features">Features</a></li>
+         <li className="nav-item"><a className="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
+         <li className="nav-item"><a className="nav-link smoth-animation" href="#resume">Resume</a></li>
+         <li className="nav-item"><a className="nav-link smoth-animation" href="#clients">Clients</a></li>
+         <li className="nav-item"><a className="nav-link smoth-animation" href="#pricing">Pricing</a></li>
+         <li className="nav-item"><a className="nav-link smoth-animation" href="#blog">blog</a></li>
+         <li className="nav-item"><a className="nav-link smoth-animation" href="#contacts">Contact</a></li>
+       </ul>
+    </div>
+		{/* <ul className="sidebar-menu">
+			<li className="sidebar-menu__item"><a href="#home"><i className="fa fa-home" aria-hidden="true"></i> Home</a></li>
+			<li className="sidebar-menu__item"><a href="#contact"><i className="fa fa-rss" aria-hidden="true"></i> News</a></li>
 			<li className="sidebar-menu__item"><a href="#"><i className="fa fa-envelope" aria-hidden="true"></i> Contact</a></li>
 			<li className="sidebar-menu__item"><a href="#"><i className="fa fa-info-circle" aria-hidden="true"></i> About</a></li>
-		</ul>
+		</ul> */}
+      
+    
 	</div>
    </>
   );
