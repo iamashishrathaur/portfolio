@@ -63,7 +63,7 @@ const Header = () => {
     </header>
 
   {/* Mobile Menu */}
-   <div className={`popup-mobile-menu ${menuOpen ? 'menu-open':''}`} onClick={handelCloseMenu}>
+   {/* <div className={`popup-mobile-menu ${menuOpen ? 'menu-open':''}`} onClick={handelCloseMenu}>
    <div className="inner">
      <div className="menu-top">
        <div className="menu-header">
@@ -77,8 +77,7 @@ const Header = () => {
        <p className="discription">Inbio is a personal portfolio template. You can customize all.</p>
      </div>
      <div className="content">
-      {/* nav-pills */}
-       <ul className="primary-menu nav onepagenav">
+       <ul className="primary-menu nav nav-pills onepagenav">
          <li className="nav-item"><a className="nav-link smoth-animation active" href="#home">Home</a></li>
          <li className="nav-item"><a className="nav-link smoth-animation" href="#features">Features</a></li>
          <li className="nav-item"><a className="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
@@ -88,7 +87,7 @@ const Header = () => {
          <li className="nav-item"><a className="nav-link smoth-animation" href="#blog">blog</a></li>
          <li className="nav-item"><a className="nav-link smoth-animation" href="#contacts">Contact</a></li>
        </ul>
-       {/* social sharea area */}
+      
        <div className="social-share-style-1 mt--40">
          <span className="title">find with me</span>
          <ul className="social-share d-flex liststyle">
@@ -110,11 +109,18 @@ const Header = () => {
            </li>
          </ul>
        </div>
-       {/* end */}
+  
      </div>
    </div>
-   </div>
-   
+   </div> */}
+   <div className={`sidebar ${menuOpen ? '':'isHidden'}`} onClick={handelCloseMenu}>
+		<ul className="sidebar-menu">
+			<li className="sidebar-menu__item"><a href="#"><i className="fa fa-home" aria-hidden="true"></i> Home</a></li>
+			<li className="sidebar-menu__item"><a href="#"><i className="fa fa-rss" aria-hidden="true"></i> News</a></li>
+			<li className="sidebar-menu__item"><a href="#"><i className="fa fa-envelope" aria-hidden="true"></i> Contact</a></li>
+			<li className="sidebar-menu__item"><a href="#"><i className="fa fa-info-circle" aria-hidden="true"></i> About</a></li>
+		</ul>
+	</div>
    </>
   );
 };

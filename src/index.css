@@ -11491,6 +11491,14 @@ body.template-color-1 {
   left: -150px;
   transition: all 0.5s ease-out;
 }
+
+/* .primary-menu.nav{
+   line-height: normal;
+  display: flex !important;
+  flex-direction: column;
+  --bs-nav-link-color:#00000000;
+  list-style: none;
+} */
 @media only screen and (max-width: 479px) {
   .popup-mobile-menu .inner {
     width: 310px;
@@ -11607,6 +11615,50 @@ body.template-color-1 {
 .popup-mobile-menu .social-share-style-1 .social-share li a {
   box-shadow: none;
 }
+
+
+/* MyCode Start  */
+
+.sidebar {
+    z-index: 9999;
+    background-color: #264653;
+    width: 12rem;
+    height: 100vh;
+    padding: 0;
+    position: fixed;
+    transition: transform 300ms ease-in;
+}
+
+.isHidden {
+    transform: translateX(-12rem);
+    transition: transform 300ms ease-out;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 1.5rem;
+    margin-top: 0;
+}
+
+.sidebar-menu__item {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+.sidebar-menu__item a {
+    color: #e9c46a;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar-menu__item a:hover {
+    color: #e76f51;
+    transition: color 150ms linear;
+}
+
+
+/* My code ends */
 
 /*----------------------
     Right Demo  
