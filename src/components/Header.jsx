@@ -63,9 +63,9 @@ const Header = () => {
     </header>
 
   {/* Mobile Menu */}
-   {/* <div className={`popup-mobile-menu ${menuOpen ? 'menu-open':''}`} onClick={handelCloseMenu}>
-   <div className="inner">
-     <div className="menu-top">
+   <div className={`popup-mobile-menu ${menuOpen ? '':'isHidden'}`} onClick={handelCloseMenu}>
+    <div className='inner'>
+    <div className="menu-top">
        <div className="menu-header">
          <a className="logo" href="index.html">
            <img src="assets/images/logo/logos-circle.png" alt="Personal Portfolio" />
@@ -76,8 +76,8 @@ const Header = () => {
        </div>
        <p className="discription">Inbio is a personal portfolio template. You can customize all.</p>
      </div>
-     <div className="content">
-       <ul className="primary-menu nav nav-pills onepagenav">
+      <div className='content'>  
+       <ul className="primary-menu nav onepagenav">
          <li className="nav-item"><a className="nav-link smoth-animation active" href="#home">Home</a></li>
          <li className="nav-item"><a className="nav-link smoth-animation" href="#features">Features</a></li>
          <li className="nav-item"><a className="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
@@ -87,7 +87,7 @@ const Header = () => {
          <li className="nav-item"><a className="nav-link smoth-animation" href="#blog">blog</a></li>
          <li className="nav-item"><a className="nav-link smoth-animation" href="#contacts">Contact</a></li>
        </ul>
-      
+
        <div className="social-share-style-1 mt--40">
          <span className="title">find with me</span>
          <ul className="social-share d-flex liststyle">
@@ -109,22 +109,7 @@ const Header = () => {
            </li>
          </ul>
        </div>
-  
-     </div>
-   </div>
-   </div> */}
-   <div className={`popup-mobile-menu ${menuOpen ? '':'isHidden'}`} onClick={handelCloseMenu}>
-    <div className='inner'>
-       <ul className="primary-menu nav onepagenav">
-         <li className="nav-item"><a className="nav-link smoth-animation active" href="#home">Home</a></li>
-         <li className="nav-item"><a className="nav-link smoth-animation" href="#features">Features</a></li>
-         <li className="nav-item"><a className="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
-         <li className="nav-item"><a className="nav-link smoth-animation" href="#resume">Resume</a></li>
-         <li className="nav-item"><a className="nav-link smoth-animation" href="#clients">Clients</a></li>
-         <li className="nav-item"><a className="nav-link smoth-animation" href="#pricing">Pricing</a></li>
-         <li className="nav-item"><a className="nav-link smoth-animation" href="#blog">blog</a></li>
-         <li className="nav-item"><a className="nav-link smoth-animation" href="#contacts">Contact</a></li>
-       </ul>
+       </div>
     </div>
 		{/* <ul className="sidebar-menu">
 			<li className="sidebar-menu__item"><a href="#home"><i className="fa fa-home" aria-hidden="true"></i> Home</a></li>
