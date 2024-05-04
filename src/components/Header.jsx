@@ -1,4 +1,4 @@
-
+import { Menu } from 'react-feather';
 const Header = () => {
   return (
     <header className="rn-header haeder-default black-logo-version header--fixed header--sticky sticky">
@@ -24,7 +24,7 @@ const Header = () => {
               <li className="nav-item"><a className="nav-link" href="#features">Features</a></li>
               <li className="nav-item"><a className="nav-link" href="#portfolio">Portfolio</a></li>
               <li className="nav-item"><a className="nav-link" href="#resume">Resume</a></li>
-              <li className="nav-item"><a className="nav-link" href="http://localhost:3000/#clients">Clients</a></li>
+              <li className="nav-item"><a className="nav-link" href="#clients">Clients</a></li>
               <li className="nav-item"><a className="nav-link" href="#pricing">Pricing</a></li>
               <li className="nav-item"><a className="nav-link" href="#blog">blog</a></li>
               <li className="nav-item"><a className="nav-link" href="#contacts">Contact</a></li>
@@ -34,7 +34,7 @@ const Header = () => {
           {/* Start Header Right  */}
           <div className="header-right">
             <div className="hamberger-menu d-block d-xl-none">
-              <i id="menuBtn" className="feather-menu humberger-menu" />
+              <Menu id="menuBtn" className="feather-menu humberger-menu" style={{ color: '#ff014f' }} /> 
             </div>
             <div className="close-menu d-block">
               <span className="closeTrigger">

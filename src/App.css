@@ -1,3 +1,7 @@
-.react-word-typed{
+.cd-headline{
+    display: inline-block;
+    height: 50px;
+}
+.cd-words-wrapper{
     margin-left: 10px;
 }
