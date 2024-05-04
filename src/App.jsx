@@ -28,9 +28,6 @@ function App() {
     <>
       <Header/>
       {/* End Header Area */}
-      {/* Start Popup Mobile Menu  */}
-      <MobileMenu/>
-      {/* End Popup Mobile Menu  */}
       <main className="main-page-wrapper">
       {/* Start Slider Area */}
       <SliderArea/>
