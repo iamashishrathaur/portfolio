@@ -1,9 +1,11 @@
-import React, { useEffect, useState, useRef } from 'react';
+import  { useEffect, useState, useRef } from 'react';
 import { Menu } from 'react-feather';
+import LogoImg from '../assets/images/logos-circle.png'
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const navLinksRef = useRef([]);
+  const navLinksRefDesktop = useRef([]);
+  const navLinksRefMobile = useRef([]);
 
   const handleOpenMenu = () => {
     setMenuOpen(true);
@@ -16,9 +18,30 @@ const Header = () => {
   };
 
   useEffect(() => {
+    const stickyHeader = () => {
+      const header = document.querySelector('.header--sticky');
+      if (window.scrollY > 250) {
+        header.classList.add('sticky');
+      } else {
+        header.classList.remove('sticky');
+      }
+    };
+
+    window.addEventListener('scroll', stickyHeader);
+
+    return () => {
+      window.removeEventListener('scroll', stickyHeader);
+    };
+  }, []);
+
+
+  useEffect(() => {
+    const isMobile = window.innerWidth < 1199; 
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      navLinksRef.current.forEach((link, index) => {
+      const navLinksRef = isMobile ? navLinksRefMobile.current : navLinksRefDesktop.current;
+      
+      navLinksRef.forEach((link, index) => {
         const section = document.querySelector(link.getAttribute('href'));
         if (section) {
           const sectionTop = section.offsetTop - 300;
@@ -31,7 +54,6 @@ const Header = () => {
         }
       });
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -47,7 +69,7 @@ const Header = () => {
             <div className="header-left">
               <div className="logo">
                 <a href="index.html">
-                  <img src="assets/images/logo/logo.png" alt="logo" />
+                  <img src={LogoImg} alt="logo" />
                 </a>
               </div>
             </div>
@@ -60,42 +82,42 @@ const Header = () => {
                 {/* Start Mainmanu Nav */}
                 <ul className="primary-menu nav nav-pills">
                   <li className="nav-item">
-                    <a className="nav-link current" href="#home" ref={(el) => (navLinksRef.current[0] = el)}>
+                    <a className="nav-link current" href="#home" ref={(el) => (navLinksRefDesktop.current[0] = el)}>
                       Home
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#features" ref={(el) => (navLinksRef.current[1] = el)}>
+                    <a className="nav-link" href="#features" ref={(el) => (navLinksRefDesktop.current[1] = el)}>
                       Features
                     </a>
                   </li>
                   <li className="nav-item" >
-                    <a className="nav-link" href="#portfolio" ref={(el) => (navLinksRef.current[2] = el)}>
+                    <a className="nav-link" href="#portfolio" ref={(el) => (navLinksRefDesktop.current[2] = el)}>
                     Portfolio
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#resume" ref={(el) => (navLinksRef.current[3] = el)}>
+                    <a className="nav-link" href="#resume" ref={(el) => (navLinksRefDesktop.current[3] = el)}>
                     Resume
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#clients" ref={(el) => (navLinksRef.current[4] = el)}>
+                    <a className="nav-link" href="#clients" ref={(el) => (navLinksRefDesktop.current[4] = el)}>
                     Clients
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#pricing" ref={(el) => (navLinksRef.current[5] = el)}>
+                    <a className="nav-link" href="#pricing" ref={(el) => (navLinksRefDesktop.current[5] = el)}>
                     Pricing
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#blog" ref={(el) => (navLinksRef.current[6] = el)}>
+                    <a className="nav-link" href="#blog" ref={(el) => (navLinksRefDesktop.current[6] = el)}>
                     Blog
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#contacts" ref={(el) => (navLinksRef.current[7] = el)}>
+                    <a className="nav-link" href="#contacts" ref={(el) => (navLinksRefDesktop.current[7] = el)}>
                     Contacts
                     </a>
                   </li>
@@ -133,7 +155,7 @@ const Header = () => {
           <div className="menu-top">
             <div className="menu-header">
               <a className="logo" href="index.html">
-                <img src="assets/images/logo/logos-circle.png" alt="Personal Portfolio" />
+                <img src={LogoImg} alt="Personal Portfolio" />
               </a>
               <div className="close-button">
                 <button className="close-menu-activation close" onClick={handleCloseMenu}>
@@ -149,42 +171,42 @@ const Header = () => {
           <div className="content">
             <ul className="primary-menu nav onepagenav">
               <li className="nav-item">
-                <a className="nav-link smoth-animation current" href="#home" ref={(el) => (navLinksRef.current[0] = el)}>
+                <a className="nav-link smoth-animation current" href="#home" ref={(el) => (navLinksRefMobile.current[0] = el)}>
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link smoth-animation" href="#features" ref={(el) => (navLinksRef.current[1] = el)}>
+                <a className="nav-link smoth-animation" href="#features" ref={(el) => (navLinksRefMobile.current[1] = el)}>
                   Features
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link smoth-animation" href="#portfolio" ref={(el) => (navLinksRef.current[2] = el)}>
+                <a className="nav-link smoth-animation" href="#portfolio" ref={(el) => (navLinksRefMobile.current[2] = el)}>
                 Portfolio
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link smoth-animation" href="#resume" ref={(el) => (navLinksRef.current[3] = el)}>
+                <a className="nav-link smoth-animation" href="#resume" ref={(el) => (navLinksRefMobile.current[3] = el)}>
                 Resume
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link smoth-animation" href="#clients" ref={(el) => (navLinksRef.current[4] = el)}>
+                <a className="nav-link smoth-animation" href="#clients" ref={(el) => (navLinksRefMobile.current[4] = el)}>
                 Clients
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link smoth-animation" href="#pricing" ref={(el) => (navLinksRef.current[5] = el)}>
+                <a className="nav-link smoth-animation" href="#pricing" ref={(el) => (navLinksRefMobile.current[5] = el)}>
                 Pricing
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link smoth-animation" href="#blog" ref={(el) => (navLinksRef.current[6] = el)}>
+                <a className="nav-link smoth-animation" href="#blog" ref={(el) => (navLinksRefMobile.current[6] = el)}>
                 Blog
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link smoth-animation" href="#contacts" ref={(el) => (navLinksRef.current[7] = el)}>
+                <a className="nav-link smoth-animation" href="#contacts" ref={(el) => (navLinksRefMobile.current[7] = el)}>
                 Contacts
                 </a>
               </li>

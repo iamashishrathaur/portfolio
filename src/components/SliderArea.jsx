@@ -2,6 +2,7 @@ import reactLogo from '../assets/images/react.png'
 import ViteLogo from '../assets/images/vite.png'
 import nodeLogo from '../assets/images/node.png'
 import TypingAnimation from './TypingAnimation'
+import BannerImg from '../assets/images/banner-01.png'
 
 const SliderArea = () => {
 
@@ -58,7 +59,7 @@ const SliderArea = () => {
           <div className="order-1 order-lg-2 col-lg-5">
             <div className="thumbnail">
               <div className="inner">
-                <img src="assets/images/slider/banner-01.png" alt="Personal Portfolio Images" />
+                <img src={BannerImg} alt="Personal Portfolio Images" />
               </div>
             </div>
           </div>
