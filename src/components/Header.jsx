@@ -62,7 +62,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="rn-header haeder-default black-logo-version header--fixed header--sticky sticky">
+      <header className="rn-header haeder-default black-logo-version header--fixed header--sticky">
         <div className="header-wrapper rn-popup-mobile-menu m--0 row align-items-center">
           {/* Start Header Left */}
           <div className="col-lg-2 col-6">
