@@ -40,7 +40,7 @@ To get started with the Vite Portfolio Project, follow these steps:
 
 1. Clone the repository:
 
-git clone https://github.com/iamashishrathaur/myportfolio.git
+git clone https://github.com/iamashishrathaur/portfolio.git
 
 cd myportfolio
 
