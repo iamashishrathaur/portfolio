@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const ResumeArea = () => {
+ const [isVisible, setIsVisible] = useState(false)
+ useEffect(()=>{
+  setIsVisible(true)
+ },[])
   return (
        <div className="rn-resume-area rn-section-gap section-separator" id="resume">
             <div className="container">
@@ -38,7 +42,7 @@ const ResumeArea = () => {
                           {/* Start Skill List Area  */}
                           <div className="col-lg-6 col-md-12 col-12">
                             <div className="content">
-                              <span className="subtitle">2007 - 2010</span>
+                              <span className="subtitle">2021 - 2024</span>
                               <h4 className="maintitle">Education Quality</h4>
                               <div className="experience-list">
                                 {/* Start Single List  */}
@@ -46,8 +50,8 @@ const ResumeArea = () => {
                                   <div className="inner">
                                     <div className="heading">
                                       <div className="title">
-                                        <h4>Personal Portfolio April Fools</h4>
-                                        <span>University of DVI (1997 - 2001)</span>
+                                        <h4>Bachelor of Technology (CSE)</h4>
+                                        <span>Dr. A.P.J. Abdul Kalam Technical University (2023 - present)</span>
                                       </div>
                                       <div className="date-of-time">
                                         <span>4.30/5</span>
@@ -65,8 +69,8 @@ const ResumeArea = () => {
                                   <div className="inner">
                                     <div className="heading">
                                       <div className="title">
-                                        <h4> Examples Of Personal Portfolio</h4>
-                                        <span>College of Studies (2000 - 2002)</span>
+                                        <h4> Diploma in Computer Science and Engineering</h4>
+                                        <span>Board of Technical Education , Utter Pradesh (2021 - 2023)</span>
                                       </div>
                                       <div className="date-of-time">
                                         <span>4.50/5</span>
@@ -84,8 +88,8 @@ const ResumeArea = () => {
                                   <div className="inner">
                                     <div className="heading">
                                       <div className="title">
-                                        <h4>Tips For Personal Portfolio</h4>
-                                        <span>University of Studies (1997 - 2001)</span>
+                                        <h4>Higher secondary education</h4>
+                                        <span>U. P. Board (2020 - 2021)</span>
                                       </div>
                                       <div className="date-of-time">
                                         <span>4.80/5</span>
@@ -183,44 +187,44 @@ const ResumeArea = () => {
                             <div className="progress-wrapper">
                               <div className="content">
                                 <span className="subtitle">Features</span>
-                                <h4 className="maintitle">Design Skill</h4>
+                                <h4 className="maintitle">Frontend Technology</h4>
                                 {/* Start Single Progress Charts */}
                                 <div className="progress-charts">
-                                  <h6 className="heading heading-h6">PHOTOSHOT</h6>
+                                  <h6 className="heading heading-h6">Recat js</h6>
                                   <div className="progress">
-                                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style={{width: '100%', visibility: 'visible', animationDuration: '0.5s', animationDelay: '0.3s', animationName: 'none'}} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}><span className="percent-label">100%</span></div>
+                                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style={{width:'95%', animationDuration: '0.5s', animationDelay: '0.3s', animationName: isVisible ? 'fadeInLeft':'none'}} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}><span className="percent-label">90%</span></div>
                                   </div>
                                 </div>
                                 {/* End Single Progress Charts */}
                                 {/* Start Single Progress Charts */}
                                 <div className="progress-charts">
-                                  <h6 className="heading heading-h6">FIGMA</h6>
+                                  <h6 className="heading heading-h6">next js</h6>
                                   <div className="progress">
-                                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style={{width: '95%', visibility: 'visible', animationDuration: '0.6s', animationDelay: '0.4s', animationName: 'none'}} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}><span className="percent-label">95%</span></div>
+                                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style={{width: '80%', visibility: 'visible', animationDuration: '0.6s', animationDelay: '0.4s', animationName: isVisible ? 'fadeInLeft':'none'}} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}><span className="percent-label">80%</span></div>
                                   </div>
                                 </div>
                                 {/* End Single Progress Charts */}
                                 {/* Start Single Progress Charts */}
                                 <div className="progress-charts">
-                                  <h6 className="heading heading-h6">ADOBE XD</h6>
+                                  <h6 className="heading heading-h6">Html,css</h6>
                                   <div className="progress">
-                                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style={{width: '60%', visibility: 'visible', animationDuration: '0.7s', animationDelay: '0.5s', animationName: 'none'}} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}><span className="percent-label">60%</span></div>
+                                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style={{width: '85%', visibility: 'visible', animationDuration: '0.7s', animationDelay: '0.5s', animationName: isVisible ? 'fadeInLeft':'none'}} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}><span className="percent-label">85%</span></div>
                                   </div>
                                 </div>
                                 {/* End Single Progress Charts */}
                                 {/* Start Single Progress Charts */}
                                 <div className="progress-charts">
-                                  <h6 className="heading heading-h6">ADOBE ILLUSTRATOR</h6>
+                                  <h6 className="heading heading-h6">Bootstrap</h6>
                                   <div className="progress">
-                                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style={{width: '70%', visibility: 'visible', animationDuration: '0.8s', animationDelay: '0.6s', animationName: 'none'}} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}><span className="percent-label">70%</span></div>
+                                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style={{width: '70%', visibility: 'visible', animationDuration: '0.8s', animationDelay: '0.6s', animationName: isVisible ? 'fadeInLeft':'none'}} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}><span className="percent-label">70%</span></div>
                                   </div>
                                 </div>
                                 {/* End Single Progress Charts */}
                                 {/* Start Single Progress Charts */}
                                 <div className="progress-charts">
-                                  <h6 className="heading heading-h6">DESIGN</h6>
+                                  <h6 className="heading heading-h6">Tailwind CSS</h6>
                                   <div className="progress">
-                                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style={{width: '90%', visibility: 'visible', animationDuration: '0.9s', animationDelay: '0.7s', animationName: 'none'}} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}><span className="percent-label">90%</span></div>
+                                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style={{width: '75%', visibility: 'visible', animationDuration: '0.9s', animationDelay: '0.7s', animationName:isVisible ? 'fadeInLeft':'none'}} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}><span className="percent-label">75%</span></div>
                                   </div>
                                 </div>
                                 {/* End Single Progress Charts */}
@@ -233,20 +237,20 @@ const ResumeArea = () => {
                             <div className="progress-wrapper">
                               <div className="content">
                                 <span className="subtitle">Features</span>
-                                <h4 className="maintitle">Development Skill</h4>
+                                <h4 className="maintitle">Backend Technology</h4>
                                 {/* Start Single Progress Charts */}
                                 <div className="progress-charts">
-                                  <h6 className="heading heading-h6">HTML</h6>
+                                  <h6 className="heading heading-h6">Node js</h6>
                                   <div className="progress">
-                                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style={{width: '85%', visibility: 'hidden', animationDuration: '0.5s', animationDelay: '0.3s', animationName: 'none'}} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}><span className="percent-label">85%</span></div>
+                                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style={{width: '91%', visibility: 'visible', animationDuration: '0.5s', animationDelay: '0.3s', animationName: isVisible ? 'fadeInLeft':'none'}} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}><span className="percent-label">91%</span></div>
                                   </div>
                                 </div>
                                 {/* End Single Progress Charts */}
                                 {/* Start Single Progress Charts */}
                                 <div className="progress-charts">
-                                  <h6 className="heading heading-h6">CSS</h6>
+                                  <h6 className="heading heading-h6">Express js</h6>
                                   <div className="progress">
-                                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style={{width: '80%', visibility: 'hidden', animationDuration: '0.6s', animationDelay: '0.4s', animationName: 'none'}} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}><span className="percent-label">80%</span></div>
+                                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style={{width: '95%', visibility: 'visible', animationDuration: '0.6s', animationDelay: '0.4s', animationName: isVisible ? 'fadeInLeft':'none'}} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}><span className="percent-label">95%</span></div>
                                   </div>
                                 </div>
                                 {/* End Single Progress Charts */}
@@ -254,23 +258,23 @@ const ResumeArea = () => {
                                 <div className="progress-charts">
                                   <h6 className="heading heading-h6">JAVASCRIPT</h6>
                                   <div className="progress">
-                                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style={{width: '90%', visibility: 'hidden', animationDuration: '0.7s', animationDelay: '0.5s', animationName: 'none'}} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}><span className="percent-label">90%</span></div>
+                                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style={{width: '90%', visibility: 'visible', animationDuration: '0.7s', animationDelay: '0.5s', animationName: isVisible ? 'fadeInLeft':'none'}} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}><span className="percent-label">90%</span></div>
                                   </div>
                                 </div>
                                 {/* End Single Progress Charts */}
                                 {/* Start Single Progress Charts */}
                                 <div className="progress-charts">
-                                  <h6 className="heading heading-h6">SOFTWARE</h6>
+                                  <h6 className="heading heading-h6">MongoDB</h6>
                                   <div className="progress">
-                                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style={{width: '75%', visibility: 'hidden', animationDuration: '0.8s', animationDelay: '0.6s', animationName: 'none'}} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}><span className="percent-label">75%</span></div>
+                                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style={{width: '80%', visibility: 'visible', animationDuration: '0.8s', animationDelay: '0.6s', animationName: isVisible ? 'fadeInLeft':'none'}} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}><span className="percent-label">80%</span></div>
                                   </div>
                                 </div>
                                 {/* End Single Progress Charts */}
                                 {/* Start Single Progress Charts */}
                                 <div className="progress-charts">
-                                  <h6 className="heading heading-h6">PLUGIN</h6>
+                                  <h6 className="heading heading-h6">Bcrypt</h6>
                                   <div className="progress">
-                                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style={{width: '70%', visibility: 'hidden', animationDuration: '0.9s', animationDelay: '0.7s', animationName: 'none'}} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}><span className="percent-label">70%</span></div>
+                                    <div className="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style={{width: '70%', visibility: 'visible', animationDuration: '0.9s', animationDelay: '0.7s', animationName: isVisible ? 'fadeInLeft':'none'}} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}><span className="percent-label">70%</span></div>
                                   </div>
                                 </div>
                                 {/* End Single Progress Charts */}
